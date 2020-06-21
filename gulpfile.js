@@ -11,7 +11,7 @@ var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
-var svgstore = require("gulp-svgstore")
+var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
@@ -23,15 +23,15 @@ gulp.task("css", function () {
     .pipe(sass())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    // .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,
@@ -97,5 +97,6 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+// gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("css", "images", "webp", "html"));
 gulp.task("start", gulp.series("build", "server"));
