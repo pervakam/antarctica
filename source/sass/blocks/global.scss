@@ -1,5 +1,5 @@
 body {
-  //min-width: 1024px;
+  min-width: 1024px;
   background-color: $main;
   margin: 0;
   text-align: center;
@@ -7,26 +7,26 @@ body {
   font-style: normal;
   color: $back;
 
-  background: url("../img/makets/desktop.jpg") no-repeat 50% 0;
+  //background: url("../img/makets/desktop.jpg") no-repeat 50% 0;
 }
 
-html {
-  opacity: 0.7;
-}
+//html {
+//  opacity: 0.7;
+//}
 
 @media (min-width: $tablet-width) and (max-width: 1023px) {
   body {
-    width: 100%;
+    min-width: 768px;
     margin: 0 auto;
-    background: url("../img/makets/tablet.jpg") no-repeat 50% 0;
+    //background: url("../img/makets/tablet.jpg") no-repeat 50% 0;
   }
 }
 
 @media (min-width: $mobile-width) and (max-width: 767px) {
   body {
-    width: 100%;
+    min-width: 320px;
     margin: 0 auto;
-    background: url("../img/makets/mobile.jpg") no-repeat 50% 0;
+    //background: url("../img/makets/mobile.jpg") no-repeat 50% 0;
     //background: url("../img/makets/menu.jpg") no-repeat 50% 0;
   }
 }

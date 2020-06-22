@@ -4,12 +4,12 @@
 }
 
 .page-header__nav-wrapper {
+  //background-color: #003169;
   display: flex;
   justify-content: space-between;
   width: 1160px;
   padding: 35px 105px 0;
   margin: 0 auto;
-
 }
 
 .page-header__logo {
@@ -37,7 +37,7 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: 1023px) {
-  .page-header {
+  .page-header__nav-wrapper {
     width: 678px;
     padding: 30px 45px 0;
   }
@@ -62,12 +62,13 @@
 }
 
 @media (min-width: $mobile-width) and (max-width: 767px) {
-  .page-header {
+  .page-header__nav-wrapper {
+    box-sizing: border-box;
     width: 320px;
     display: flex;
     flex-direction: column;
     padding: 0;
-    background-color: $back;
+    //background-color: $back;
   }
 
   .page-header__logo {
