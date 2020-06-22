@@ -1,16 +1,24 @@
 .page-header {
-  margin: 0 auto;
-  width: 1160px;
+  position: relative;
+  z-index: 10;
+}
+
+.page-header__nav-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 35px 103px 0;
-  background-color: $back;
+  width: 1160px;
+  padding: 35px 105px 0;
+  margin: 0 auto;
+
 }
 
 .page-header__logo {
+  display: block;
   background: url("../img/logo/logo-desktop.svg") no-repeat;
   width: 70px;
   height: 38px;
+
+  margin: 0;
 }
 
 .page-header__nav {

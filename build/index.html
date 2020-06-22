@@ -10,8 +10,8 @@
 <body>
 <header class="page-header">
   <div class="page-header__nav-wrapper">
-  <a class="page-header__logo"></a>
-  <div class="page-header__nav-open"></div>
+    <a class="page-header__logo"></a>
+    <div class="page-header__nav-open"></div>
     <nav class="page-header__nav">
       <a class="page-header__nav-item" href="#">Преимущества</a>
       <a class="page-header__nav-item" href="#">Направления</a>
@@ -20,36 +20,60 @@
     </nav>
   </div>
 </header>
-<main>
+<main class="page-main">
   <section class="intro">
-    <div>
-      <h1>Круизы в Антарктику</h1>
-      <p>Волшебный мир айсбергов и пингвинов</p>
+    <div class="intro__background">
+      <picture>
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/intro/intro-mobile@1x.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 1023px)" srcset="img/intro/intro-tablet@1x.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/intro/intro-desktop@1x.webp 1x, img/intro/intro-desktop@2x.webp 2x">
+
+        <source media="(max-width: 767px)" srcset="img/intro/intro-tablet@1x.jpg 1x, img/intro/intro-tablet@2x.jpg 2x">
+        <source media="(max-width: 1023px)" srcset="img/intro/intro-desktop@1x.jpg 1x, img/intro/intro-desktop@2x.jpg 2x">
+        <img class="page-main__intro-pic" src="img/intro/intro-desktop@1x.jpg" srcset="img/intro/intro-desktop@2x.jpg 2x" width="1366" height="650" alt="Круизы в Антарктику">
+      </picture>
+      <div class="intro__text">
+      <h1 class="intro__title">Круизы в Антарктику</h1>
+      <p class="intro__description">Волшебный мир айсбергов и пингвинов</p>
+      </div>
     </div>
-    <div>
-      <h1>Путешествие на край Земли</h1>
-      <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный
+    <div class="intro__about">
+      <div class="intro__about-text">
+      <h1 class="intro__about-title">Путешествие на край Земли</h1>
+      <p class="intro__about-description">Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный
         лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов,
         морских котиков и многое другое.</p>
+      </div>
+      <div class="intro__about-pic">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/intro/pinguins-mobile@1x.webp 1x, img/intro/pinguins-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/intro/pinguins-tablet@1x.webp 1x, img/intro/pinguins-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/intro/pinguins-desktop@1x.webp 1x, img/intro/pinguins-desktop@2x.webp 2x">
+
+          <source media="(max-width: 767px)" srcset="img/intro/pinguins-tablet@1x.jpg 1x, img/intro/pinguins-tablet@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/intro/pinguins-desktop@1x.jpg 1x, img/intro/pinguins-desktop@2x.jpg 2x">
+          <img class="page-main__intro-pic" src="img/intro/pinguins-desktop@1x.jpg" srcset="img/intro/pinguins-desktop@2x.jpg 2x" width="560" height="301" alt="Путешествие на край Земли">
+        </picture>
+      </div>
     </div>
   </section>
   <section class="advantages">
-    <h1>Преимущества</h1>
-    <ul>
-      <li>
-        <h2>Небольшой круизный лайнер</h2>
-        <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность
+    <h1 class="advantages__title">Преимущества</h1>
+    <ul class="advantages__list">
+      <li class="advantages__item">
+        <h2 class="advantages__item-title">Небольшой круизный лайнер</h2>
+        <p class="advantages__item-description">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность
           насладиться видами и природой.</p>
       </li>
-      <li>
-        <h2>Система все включено</h2>
-        <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24
+      <li class="advantages__item">
+        <h2 class="advantages__item-title">Система все включено</h2>
+        <p class="advantages__item-description">Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24
           часа.</p>
       </li>
-      <li>
-        <h2>Экскурсионные туры на Zodiac</h2>
-        <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
-          опытных экскурсоводов.</p></li>
+      <li class="advantages__item">
+        <h2 class="advantages__item-title">Экскурсионные туры на Zodiac</h2>
+        <p class="advantages__item-description">Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
+          опытных экскурсоводов.</p></li>
 
     </ul>
   </section>
@@ -180,8 +204,8 @@
   </section>
   <section class="early-booking">
     <div>
-    <h1>Раннее бронирование</h1>
-    <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+      <h1>Раннее бронирование</h1>
+      <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
     </div>
     <div>
       <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>

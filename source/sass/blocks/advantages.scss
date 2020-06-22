@@ -1,0 +1,86 @@
+.advantages {
+  padding: 108px 103px;
+
+}
+
+.advantages__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin: 0;
+}
+
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  margin-top: 48px;
+  padding: 0;
+}
+
+.advantages__item {
+  width: 360px;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 30px;
+  background-color: $main;
+
+  &:nth-child(1) {
+    &::before {
+      display: block;
+      content: "";
+      background: url("../img/advantages/advantages-ship.svg") no-repeat;
+      width: 27px;
+      height: 32px;
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      display: block;
+      content: "";
+      background: url("../img/advantages/advantages-check.svg") no-repeat;
+      width: 38px;
+      height: 21px;
+      margin-top: 7px;
+      margin-bottom: 23px;
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      display: block;
+      content: "";
+      background: url("../img/advantages/advantages-boat.svg") no-repeat;
+      width: 42px;
+      height: 15px;
+      margin-top: 9px;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.advantages__item-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  margin-top: 19px;
+
+}
+
+.advantages__item-description {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 9px;
+}
+
+//@media (min-width: $tablet-width) and (max-width: 1023px) {
+
+//}
+//
+//@media (min-width: $mobile-width) and (max-width: 767px) {
+
+//}
