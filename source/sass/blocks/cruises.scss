@@ -94,7 +94,6 @@
   }
 }
 
-
 .cruises__item-title,
 .cruises__card-title {
   font-weight: 500;
@@ -113,7 +112,6 @@
   top: 340px;
   left: 30px;
 }
-
 
 .cruises__card {
 
@@ -163,10 +161,245 @@
 }
 
 
-//@media (min-width: $tablet-width) and (max-width: 1023px) {
+@media (min-width: $tablet-width) and (max-width: 1023px) {
 
-//}
-//
-//@media (min-width: $mobile-width) and (max-width: 767px) {
+  .cruises {
+    padding: 97px 60px 100px;
+  }
 
-//}
+  .cruises__title {
+    font-size: 26px;
+    margin: 0;
+    margin-bottom: 23px;
+  }
+
+  .cruises__item {
+    box-sizing: border-box;
+    width: 309px;
+    text-align: left;
+    margin-top: 30px;
+    background-color: #638ec3;
+    background-size: 309px 386px;
+    background-repeat: no-repeat;
+
+    &:nth-child(1) {
+      background-image: url("../img/cruises/astoria-tablet@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/astoria-tablet@2x.jpg");
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/cruises/astoria-tablet@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/astoria-tablet@2x.jpg");
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url("../img/cruises/atlantis-tablet@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/atlantis-tablet@2x.jpg");
+      }
+    }
+
+    &:nth-child(4) {
+      background-image: url("../img/cruises/odyssey-tablet@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/odyssey-tablet@2x.jpg");
+      }
+    }
+
+    &:nth-child(5) {
+      background-image: url("../img/cruises/olympia-tablet@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/olympia-tablet@2x.jpg");
+      }
+    }
+
+    &:nth-child(6) {
+      background-image: url("../img/cruises/aurora-tablet@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/aurora-tablet@2x.jpg");
+      }
+    }
+
+    &:nth-child(7) {
+      background-image: url("../img/cruises/leonor-tablet@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/leonor-tablet@2x.jpg");
+      }
+    }
+
+    &:nth-child(8) {
+      background-image: url("../img/cruises/minion-tablet@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/minion-tablet@2x.jpg");
+      }
+    }
+
+    &:hover {
+      .cruises__card {
+        opacity: 1;
+      }
+
+      .cruises__item-title {
+        opacity: 0;
+      }
+    }
+  }
+
+  .cruises__card-title {
+    margin-bottom: 17px;
+  }
+
+  .cruises__item-title {
+    top: 336px;
+    left: 35px;
+  }
+
+  .cruises__card {
+    padding: 35px;
+    margin-top: -21px;
+    opacity: 0;
+
+
+    ////
+    height: 386px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cruises__card-item,
+  .cruises__card-description {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .cruises__card-item {
+    font-weight: 500;
+    margin-top: 12px;
+
+    &--route {
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0;
+    }
+  }
+
+  .cruises__card-description {
+    margin-top: 0;
+  }
+
+  .cruises__booking {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px 46px 10px 47px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: 767px) {
+
+  .cruises {
+    padding: 60px 25px 35px;
+  }
+
+  .cruises__title {
+    font-size: 24px;
+    margin-bottom: 36px;
+  }
+
+  .cruises__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .cruises__item {
+    width: 270px;
+    margin-top: 0;
+    margin-bottom: 31px;
+    background-size: 270px 386px;
+
+
+    &:nth-child(1) {
+      background-image: url("../img/cruises/astoria-mobile@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/astoria-mobile@2x.jpg");
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/cruises/astoria-mobile@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/astoria-mobile@2x.jpg");
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url("../img/cruises/atlantis-mobile@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/atlantis-mobile@2x.jpg");
+      }
+    }
+
+    &:nth-child(4) {
+      background-image: url("../img/cruises/odyssey-mobile@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/odyssey-mobile@2x.jpg");
+      }
+    }
+
+    &:nth-child(5) {
+      background-image: url("../img/cruises/olympia-mobile@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/olympia-mobile@2x.jpg");
+      }
+    }
+
+    &:nth-child(6) {
+      background-image: url("../img/cruises/aurora-mobile@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/aurora-mobile@2x.jpg");
+      }
+    }
+
+    &:nth-child(7) {
+      background-image: url("../img/cruises/leonor-mobile@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/leonor-mobile@2x.jpg");
+      }
+    }
+
+    &:nth-child(8) {
+      background-image: url("../img/cruises/minion-mobile@1x.jpg");
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/cruises/minion-mobile@2x.jpg");
+      }
+    }
+
+    &:hover {
+      .cruises__card {
+        opacity: 1;
+      }
+
+      .cruises__item-title {
+        opacity: 0;
+      }
+    }
+  }
+
+  .cruises__card-title {
+    margin-bottom: 17px;
+  }
+
+  .cruises__item-title {
+
+    top: 345px;
+    left: 26px;
+  }
+
+}
