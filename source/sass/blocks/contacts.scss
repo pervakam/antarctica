@@ -66,6 +66,7 @@
   }
 
   &:nth-child(2) {
+
     &::before {
       display: inline-block;
       vertical-align: middle;
@@ -77,6 +78,11 @@
       margin-right: 10px;
     }
   }
+}
+
+.contacts__item-tel {
+  text-decoration: none;
+  color: $back;
 }
 
 @media (min-width: $tablet-width) and (max-width: 1023px) {
@@ -136,12 +142,12 @@
 @media (min-width: $mobile-width) and (max-width: 767px) {
 
   .contacts {
-    padding: 58px 15px 60px;
+    padding: 58px 15px 62px;
     flex-direction: column;
   }
 
   .contacts__map {
-    margin-top: 36px;
+    margin-top: 37px;
     order: 2;
     position: relative;
 

@@ -59,7 +59,7 @@
   margin-bottom: 27px;
 }
 
-.booking__form-field {
+.booking__form input {
   box-sizing: border-box;
 
   margin-bottom: 19px;
@@ -97,7 +97,7 @@
   }
 }
 
-.booking__form-check {
+.booking__form [type="checkbox"] {
   opacity: 0;
 
   &:checked + .booking__form-agree {
@@ -174,7 +174,7 @@
     margin-bottom: 27px;
   }
 
-  .booking__form-field {
+  .booking__form input  {
     box-sizing: border-box;
 
     margin-bottom: 19px;
@@ -188,7 +188,7 @@
 
   }
 
-  .booking__form-agree {
+  .booking__form [type="checkbox"] {
     margin-top: -8px;
 
     &::before {
@@ -211,7 +211,7 @@
 @media (min-width: $mobile-width) and (max-width: 767px) {
 
   .booking {
-    padding: 60px 15px 64px;
+    padding: 60px 15px 65px;
     flex-direction: column;
 
     background-size: 320px 760px;
@@ -241,7 +241,7 @@
     line-height: 22px;
 
     margin-top: 14px;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
     width: 257px;
 
   }
@@ -261,7 +261,7 @@
     margin-bottom: 27px;
   }
 
-  .booking__form-agree {
+  .booking__form [type="checkbox"] {
     line-height: 12px;
 
     margin-top: -12px;

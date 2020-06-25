@@ -70,6 +70,7 @@
 
   .page-main__intro-pic {
     width: 768px;
+    margin-top: -4px;
   }
 
   .intro__text {
@@ -125,37 +126,45 @@
 
 @media (min-width: $mobile-width) and (max-width: 767px) {
 
-  .intro__background {
-    top: -270px;
+  .intro {
+    margin-top: -62px;
+  }
 
+  .intro__background {
+    top: 0;
     width: 320px;
+    box-sizing: border-box;
+    padding-bottom: 165px;
   }
 
   .page-main__intro-pic {
     width: 320px;
+    height: 500px;
   }
 
   .intro__text {
     padding-left: 15px;
-    top: -353px;
+    top: 0;
+    margin-top: -328px;
   }
 
   .intro__title {
     font-size: 36px;
     line-height: 45px;
-    margin-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .intro__description {
     font-size: 16px;
     line-height: 22px;
-    margin-top: 0;
+    margin-top: 11px;
   }
 
   .intro__about {
     flex-direction: column;
     padding: 55px 15px 61px;
-    margin-top: -460px;
+    margin-top: 0;
   }
 
   .intro__about-text {

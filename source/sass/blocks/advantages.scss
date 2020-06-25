@@ -174,7 +174,7 @@
 @media (min-width: $mobile-width) and (max-width: 767px) {
 
   .advantages {
-    padding: 58px 15px 35px;
+    padding: 58px 15px 31px;
 
     background-size: 320px 997px;
     background-image: url("../img/advantages/advantages-mobile@1x.jpg");
@@ -201,7 +201,7 @@
     width: 290px;
     padding: 20px;
     background-color: $main;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 
     &:nth-child(1) {
       &::before {

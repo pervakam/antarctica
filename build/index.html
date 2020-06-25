@@ -8,15 +8,35 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 <header class="page-header">
+  <div class="page-header__logo-wrapper">
+    <a class="page-header__logo">
+      <span class="visually-hidden">Круизы в Антарктику</span>
+      <svg class="page-header__logo-img" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M.904 31.125l13.769-18.582 3.766 2.013L27.404 0l5.585 6.659 2.078-1.704 8.054 10.22 5.716-6.813 15.977 22.763L49.42 11.769l-2.338 8.13 2.143 6.426-13.769-18.97-.15 6.473 7.814 17.297-14.614-26.79 4.222 14.48-5.91-14.092-3.247 9.369.649-6.117L16.1 30.04l.974-9.291-3.377-3.716L.904 31.125z" fill="#F9FBFD"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M69.441 34.031C47.641 16.428 13.71 40.63 0 31.296c15.072 13.226 50.302-9.132 69.441 2.735z" fill="#F9FBFD"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M70 35.416c-17.104-10.899-42.543 4.268-55.581.756 14.128 6.856 40.43-8.336 55.581-.756z" fill="#F9FBFD"></path>
+      </svg>
+    </a>
+    <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  </div>
   <div class="page-header__nav-wrapper">
-    <a class="page-header__logo"></a>
-    <div class="page-header__nav-open"></div>
     <nav class="page-header__nav">
-      <a class="page-header__nav-item" href="#">Преимущества</a>
-      <a class="page-header__nav-item" href="#">Направления</a>
-      <a class="page-header__nav-item" href="#">Ближайшие круизы</a>
-      <a class="page-header__nav-item" href="#">Контакты</a>
+      <ul class="page-header__nav-list">
+        <li class="page-header__nav-item">
+          <a class="page-header__item-link" href="#advantages">Преимущества</a>
+        </li>
+        <li class="page-header__nav-item">
+          <a class="page-header__item-link" href="#">Направления</a>
+        </li>
+        <li class="page-header__nav-item">
+          <a class="page-header__item-link" href="#cruises">Ближайшие круизы</a>
+        </li>
+        <li class="page-header__nav-item">
+          <a class="page-header__item-link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
     </nav>
   </div>
 </header>
@@ -24,12 +44,18 @@
   <section class="intro">
     <div class="intro__background">
       <picture>
+        <!-- 1х: 320px; 2x: 640px -->
         <source type="image/webp" media="(max-width: 767px)" srcset="img/intro/intro-mobile@1x.webp 1x, img/intro/intro-mobile@2x.webp 2x">
+        <!-- 1х: 768px; 2x: 1536px -->
         <source type="image/webp" media="(max-width: 1023px)" srcset="img/intro/intro-tablet@1x.webp 1x, img/intro/intro-tablet@2x.webp 2x">
+        <!-- 1х: 1366px; 2x: 2732px -->
         <source type="image/webp" srcset="img/intro/intro-desktop@1x.webp 1x, img/intro/intro-desktop@2x.webp 2x">
 
+        <!-- 1х: 320px; 2x: 640px -->
         <source media="(max-width: 767px)" srcset="img/intro/intro-mobile@1x.jpg 1x, img/intro/intro-mobile@2x.jpg 2x">
+        <!-- 1х: 768px; 2x: 1536px -->
         <source media="(max-width: 1023px)" srcset="img/intro/intro-tablet@1x.jpg 1x, img/intro/intro-tablet@2x.jpg 2x">
+        <!-- 1х: 1366px; 2x: 2732px -->
         <img class="page-main__intro-pic" src="img/intro/intro-desktop@1x.jpg" srcset="img/intro/intro-desktop@2x.jpg 2x" width="1366" height="650" alt="Круизы в Антарктику">
       </picture>
       <div class="intro__text">
@@ -47,18 +73,24 @@
       </div>
       <div class="intro__about-pic">
         <picture>
+          <!-- 1х: 290px; 2x: 280px -->
           <source type="image/webp" media="(max-width: 767px)" srcset="img/intro/pinguins-mobile@1x.webp 1x, img/intro/pinguins-mobile@2x.webp 2x">
+          <!-- 1х: 324px; 2x: 648px -->
           <source type="image/webp" media="(max-width: 1023px)" srcset="img/intro/pinguins-tablet@1x.webp 1x, img/intro/pinguins-tablet@2x.webp 2x">
+          <!-- 1х: 560px; 2x: 1120px -->
           <source type="image/webp" srcset="img/intro/pinguins-desktop@1x.webp 1x, img/intro/pinguins-desktop@2x.webp 2x">
 
+          <!-- 1х: 290px; 2x: 280px -->
           <source media="(max-width: 767px)" srcset="img/intro/pinguins-tablet@1x.jpg 1x, img/intro/pinguins-tablet@2x.jpg 2x">
+          <!-- 1х: 324px; 2x: 648px -->
           <source media="(max-width: 1023px)" srcset="img/intro/pinguins-desktop@1x.jpg 1x, img/intro/pinguins-desktop@2x.jpg 2x">
+          <!-- 1х: 560px; 2x: 1120px -->
           <img class="intro__about-img" src="img/intro/pinguins-desktop@1x.jpg" srcset="img/intro/pinguins-desktop@2x.jpg 2x" width="560" height="301" alt="Путешествие на край Земли">
         </picture>
       </div>
     </div>
   </section>
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <h1 class="advantages__title">Преимущества</h1>
     <ul class="advantages__list">
       <li class="advantages__item">
@@ -69,16 +101,18 @@
       </li>
       <li class="advantages__item">
         <h2 class="advantages__item-title">Система все включено</h2>
-        <p class="advantages__item-description advantages__item-description--allinclusive">Все наши круизы работают по системе “Все Включено”. Великолепные блюда и
+        <p class="advantages__item-description advantages__item-description--allinclusive">Все наши круизы работают
+          по системе “Все Включено”. Великолепные блюда и
           безлимитный бар доступны для вас 24 часа.</p>
       </li>
       <li class="advantages__item">
         <h2 class="advantages__item-title">Экскурсионные туры на Zodiac</h2>
-        <p class="advantages__item-description advantages__item-description--zodiac">Экскурсионные туры к берегам Антарктиды совершаются на оборудованных
+        <p class="advantages__item-description advantages__item-description--zodiac">Экскурсионные туры к берегам
+          Антарктиды совершаются на оборудованных
           лодках типа Zodiac в сопровождении опытных экскурсоводов.</p></li>
     </ul>
   </section>
-  <section class="cruises">
+  <section class="cruises" id="cruises">
     <h1 class="cruises__title">Ближайшие круизы</h1>
     <ul class="cruises__list">
       <li class="cruises__item">
@@ -95,7 +129,7 @@
             <h3 class="cruises__card-item">Цена</h3>
             <p class="cruises__card-description">от 11500 $</p>
           </div>
-          <button class="cruises__booking button">Забронировать</button>
+          <button class="cruises__booking button" type="button">Забронировать</button>
         </div>
       </li>
       <li class="cruises__item">
@@ -112,7 +146,7 @@
             <h3 class="cruises__card-item">Цена</h3>
             <p class="cruises__card-description">от 14500 $</p>
           </div>
-          <button class="cruises__booking button">Забронировать</button>
+          <button class="cruises__booking button" type="button">Забронировать</button>
         </div>
       </li>
       <li class="cruises__item">
@@ -129,7 +163,7 @@
             <h3 class="cruises__card-item">Цена</h3>
             <p class="cruises__card-description">от 14500 $</p>
           </div>
-          <button class="cruises__booking button">Забронировать</button>
+          <button class="cruises__booking button" type="button">Забронировать</button>
         </div>
       </li>
       <li class="cruises__item">
@@ -146,7 +180,7 @@
             <h3 class="cruises__card-item">Цена</h3>
             <p class="cruises__card-description">от 9700 $</p>
           </div>
-          <button class="cruises__booking button">Забронировать</button>
+          <button class="cruises__booking button" type="button">Забронировать</button>
         </div>
       </li>
       <li class="cruises__item">
@@ -163,7 +197,7 @@
             <h3 class="cruises__card-item">Цена</h3>
             <p class="cruises__card-description">от 18600 $</p>
           </div>
-          <button class="cruises__booking button">Забронировать</button>
+          <button class="cruises__booking button" type="button">Забронировать</button>
         </div>
       </li>
       <li class="cruises__item">
@@ -180,7 +214,7 @@
             <h3 class="cruises__card-item">Цена</h3>
             <p class="cruises__card-description">от 11700 $</p>
           </div>
-          <button class="cruises__booking button">Забронировать</button>
+          <button class="cruises__booking button" type="button">Забронировать</button>
         </div>
       </li>
       <li class="cruises__item">
@@ -197,7 +231,7 @@
             <h3 class="cruises__card-item">Цена</h3>
             <p class="cruises__card-description">от 12500 $</p>
           </div>
-          <button class="cruises__booking button">Забронировать</button>
+          <button class="cruises__booking button" type="button">Забронировать</button>
         </div>
       </li>
       <li class="cruises__item">
@@ -214,39 +248,45 @@
             <h3 class="cruises__card-item">Цена</h3>
             <p class="cruises__card-description">от 12300 $</p>
           </div>
-          <button class="cruises__booking button">Забронировать</button>
+          <button class="cruises__booking button" type="button">Забронировать</button>
         </div>
       </li>
     </ul>
   </section>
-  <section class="booking">
+  <section class="booking" id="booking">
     <div class="booking__about">
       <h1 class="booking__about-title">Раннее бронирование</h1>
       <p class="booking__about-description">Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
     </div>
-    <div class="booking__form">
+    <form class="booking__form">
       <p class="booking__form-description">Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
-      <input class="booking__form-field" type="text" name="name-field" id="name-field" value="" placeholder="Валерия">
+      <input type="text" name="name-field" id="name-field" value="" placeholder="Валерия" required="">
       <label for="name-field"></label>
-      <input class="booking__form-field" type="tel" name="tel-field" id="tel-field" value="" placeholder="89236889975">
+      <input type="tel" name="tel-field" id="tel-field" value="" placeholder="89236889975" required="">
       <label for="tel-field"></label>
-      <input class="booking__form-field" type="email" name="email-field" id="email-field" value="" placeholder="grishaewa.lera@gmail.com">
+      <input type="email" name="email-field" id="email-field" value="" placeholder="grishaewa.lera@gmail.com" required="">
       <label for="email-field"></label>
-      <input class="booking__form-check" type="checkbox" name="agree" id="agree-field" checked="">
-      <label class="booking__form-agree" for="agree-field">Я согласен на обработку моих персональных данных</label>
-      <button class="booking__form-button button">Оставить заявку</button>
-    </div>
+      <input class="booking__form-check" type="checkbox" name="agree" id="agree-field" checked="" required="">
+      <label for="agree-field">Я согласен на обработку моих персональных данных</label>
+      <button class="booking__form-button button" type="submit">Оставить заявку</button>
+    </form>
   </section>
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="contacts__map">
       <picture>
+        <!-- 1х: 290px; 2x: 580px -->
         <source type="image/webp" media="(max-width: 767px)" srcset="img/contacts/map-mobile@1x.webp 1x, img/contacts/map-mobile@2x.webp 2x">
+        <!-- 1х: 324px; 2x: 648px -->
         <source type="image/webp" media="(max-width: 1023px)" srcset="img/contacts/map-tablet@1x.webp 1x, img/contacts/map-tablet@2x.webp 2x">
+        <!-- 1х: 560px; 2x: 1120px -->
         <source type="image/webp" srcset="img/contacts/map-desktop@1x.webp 1x, img/contacts/map-desktop@2x.webp 2x">
 
+        <!-- 1х: 290px; 2x: 580px -->
         <source media="(max-width: 767px)" srcset="img/contacts/map-mobile@1x.jpg 1x, img/contacts/map-mobile@2x.jpg 2x">
+        <!-- 1х: 324px; 2x: 648px -->
         <source media="(max-width: 1023px)" srcset="img/contacts/map-tablet@1x.jpg 1x, img/contacts/map-tablet@2x.jpg 2x">
-        <img class="contacts__map-img" src="img/contacts/map-desktop@1x.jpg" srcset="img/contacts/map-desktop@2x.jpg 2x" width="560" height="306" alt="Круизы в Антарктику">
+        <!-- 1х: 560px; 2x: 1120px -->
+        <img class="contacts__map-img" src="img/contacts/map-desktop@1x.jpg" srcset="img/contacts/map-desktop@2x.jpg 2x" width="560" height="306" alt="Карта">
       </picture>
     </div>
     <div class="contacts__info">
@@ -254,7 +294,7 @@
         все расскажем.</p>
       <ul class="contacts__list">
         <li class="contacts__item">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</li>
-        <li class="contacts__item">8-800-200-00-00</li>
+        <li class="contacts__item"><a class="contacts__item-tel" href="tel:88002000000">8-800-200-00-00</a></li>
       </ul>
     </div>
   </section>
@@ -262,10 +302,10 @@
 <footer class="page-footer">
   <a class="page-footer__logo"></a>
   <nav class="page-footer__nav">
-    <a class="page-footer__nav-item" href="#">Преимущества</a>
+    <a class="page-footer__nav-item" href="#advantages">Преимущества</a>
     <a class="page-footer__nav-item" href="#">Направления</a>
-    <a class="page-footer__nav-item" href="#">Ближайшие круизы</a>
-    <a class="page-footer__nav-item" href="#">Контакты</a>
+    <a class="page-footer__nav-item" href="#cruises">Ближайшие круизы</a>
+    <a class="page-footer__nav-item" href="#contacts">Контакты</a>
   </nav>
   <ul class="page-footer__social-networks">
     <li class="page-footer__social-networks-item">
@@ -295,5 +335,6 @@
   </ul>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
