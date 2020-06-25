@@ -4,7 +4,6 @@
 }
 
 .page-header__nav-wrapper {
-  //background-color: #003169;
   display: flex;
   justify-content: space-between;
   width: 1160px;
@@ -68,7 +67,6 @@
     display: flex;
     flex-direction: column;
     padding: 0;
-    //background-color: $back;
   }
 
   .page-header__logo {
@@ -88,11 +86,16 @@
   }
 
   .page-header__nav {
+    width: 320px;
+    box-sizing: border-box;
+    padding: 20px 15px 65px;
+    margin-left: -15px;
+    background-color: yellowgreen ;
     display: flex;
     flex-direction: column;
     text-align: left;
-
-    padding-top: 31px;
+    ///
+    //display: none;
   }
 
   .page-header__nav-close {

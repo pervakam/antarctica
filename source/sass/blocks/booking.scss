@@ -1,0 +1,299 @@
+.booking {
+  padding: 50px 163px 49px;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #96bee2;
+  background-size: 1366px 555px;
+  background-repeat: no-repeat;
+  background-image: url("../img/booking/background-desktop@1x.jpg");
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/booking/background-desktop@2x.jpg");
+  }
+
+}
+
+.booking__about {
+  text-align: left;
+  margin-top: 165px;
+  width: 500px;
+}
+
+.booking__about-title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 0.3px;
+
+  margin: 0;
+}
+
+.booking__about-description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.1px;
+
+  margin-top: 5px;
+  width: 360px;
+
+}
+
+.booking__form {
+  display: flex;
+  flex-direction: column;
+  width: 403px;
+  background-color: $back;
+
+  box-sizing: border-box;
+  padding: 44px 50px 50px;
+  text-align: left;
+}
+
+.booking__form-description {
+  color: $main;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 27px;
+}
+
+.booking__form-field {
+  box-sizing: border-box;
+
+  margin-bottom: 19px;
+  padding: 12px 0 10px 15px;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+}
+
+.booking__form-agree {
+  letter-spacing: -0.1px;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 10px;
+  color: white;
+
+  margin-top: -10px;
+  margin-left: 24px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background-color: $main;
+    vertical-align: middle;
+
+    margin-left: -24px;
+    margin-top: -3px;
+    margin-right: 6px;
+  }
+}
+
+.booking__form-check {
+  opacity: 0;
+
+  &:checked + .booking__form-agree {
+      &::before {
+        background-image: url("../img/booking/tick.svg");
+        background-repeat: no-repeat;
+        background-position: 3px 5px;
+      }
+    }
+}
+
+.booking__form-button {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 12px 89px 11px 90px;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) and (max-width: 1023px) {
+
+  .booking {
+    padding: 89px 174px 100px;
+    flex-direction: column;
+
+    background-size: 768px 805px;
+    background-repeat: no-repeat;
+    background-image: url("../img/booking/background-tablet@1x.jpg");
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking/background-tabletdesktop@2x.jpg");
+    }
+
+  }
+
+  .booking__about {
+    text-align: center;
+    margin-top: 0;
+    width: 420px;
+  }
+
+  .booking__about-title {
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: 0.1px;
+  }
+
+  .booking__about-description {
+    letter-spacing: -0.1px;
+
+    margin-top: 5px;
+    margin-bottom: 51px;
+    width: 100%;
+  }
+
+  .booking__form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 403px;
+    background-color: $back;
+
+    box-sizing: border-box;
+    padding: 44px 50px 50px;
+    text-align: left;
+  }
+
+  .booking__form-description {
+    color: $main;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 27px;
+  }
+
+  .booking__form-field {
+    box-sizing: border-box;
+
+    margin-bottom: 19px;
+    padding: 12px 0 10px 15px;
+
+    &::placeholder {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+  }
+
+  .booking__form-agree {
+    margin-top: -8px;
+
+    &::before {
+      margin-left: -23px;
+      margin-top: -5px;
+      margin-right: 6px;
+    }
+  }
+
+  .booking__form-button {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 12px 89px 11px 90px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: 767px) {
+
+  .booking {
+    padding: 60px 15px 64px;
+    flex-direction: column;
+
+    background-size: 320px 760px;
+    background-image: url("../img/booking/background-mobile@1x.jpg");
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/booking/background-mobile@2x.jpg");
+    }
+
+  }
+
+  .booking__about {
+    margin: 0 auto;
+    text-align: center;
+
+    width: 257px;
+  }
+
+  .booking__about-title {
+    font-size: 24px;
+    line-height: 31px;
+
+    margin: 0;
+  }
+
+  .booking__about-description {
+    font-size: 16px;
+    line-height: 22px;
+
+    margin-top: 14px;
+    margin-bottom: 33px;
+    width: 257px;
+
+  }
+
+  .booking__form {
+    width: 290px;
+
+    box-sizing: border-box;
+    padding: 35px 30px 40px;
+    text-align: left;
+  }
+
+  .booking__form-description {
+    text-align: center;
+
+    line-height: 25px;
+    margin-bottom: 27px;
+  }
+
+  .booking__form-agree {
+    line-height: 12px;
+
+    margin-top: -12px;
+    margin-left: 29px;
+    position: relative;
+
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -29px;
+
+      height: 20px;
+      width: 20px;
+
+      margin: 0;
+
+    }
+  }
+
+  .booking__form-check {
+    &:checked + .booking__form-agree {
+      &::before {
+        background-position: 4px 6px;
+      }
+    }
+  }
+
+  .booking__form-button {
+    margin-top: 26px;
+    padding: 12px 0 11px 0;
+
+  }
+}
+
