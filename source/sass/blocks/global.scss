@@ -13,18 +13,58 @@ body {
 
 @media (min-width: $tablet-width) and (max-width: 1023px) {
   body {
-    min-width: 768px;
+    min-width: $tablet-width;
     margin: 0 auto;
     //background: url("../img/makets/tablet.jpg") no-repeat 50% 0;
   }
-
 }
 
 @media (min-width: $mobile-width) and (max-width: 767px) {
   body {
-    min-width: 320px;
+    min-width: $mobile-width;
     margin: 0 auto;
     //background: url("../img/makets/mobile.jpg") no-repeat 50% 0;
     //background: url("../img/makets/menu.jpg") no-repeat 50% 0;
   }
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: normal;
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: normal;
+  src: url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
 }

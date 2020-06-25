@@ -6,12 +6,12 @@
 
 @media (min-width: $tablet-width) and (max-width: 1023px) {
   .page-main {
-    width: 768px;
+    width: $tablet-width;
   }
 }
 
 @media (min-width: $mobile-width) and (max-width: 767px) {
   .page-main {
-    width: 320px;
+    width: $mobile-width;
   }
 }

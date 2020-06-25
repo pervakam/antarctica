@@ -1,17 +1,16 @@
 .advantages {
   padding: 108px 103px 119px;
-
   background-color: #96bee2;
   background-size: 1366px 562px;
   background-repeat: no-repeat;
   background-image: url("../img/advantages/advantages-desktop@1x.jpg");
+
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/advantages/advantages-desktop@2x.jpg");
   }
-
 }
 
-.advantages__title {
+.advantages h1 {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -31,10 +30,10 @@
   width: 360px;
   box-sizing: border-box;
   text-align: left;
-  padding: 30px 30px 25px ;
+  padding: 30px 30px 25px;
   background-color: $main;
 
-  &:nth-child(1) {
+  &--ship {
     &::before {
       display: block;
       content: "";
@@ -44,7 +43,7 @@
     }
   }
 
-  &:nth-child(2) {
+  &--allinclusive {
     &::before {
       display: block;
       content: "";
@@ -56,7 +55,7 @@
     }
   }
 
-  &:nth-child(3) {
+  &--zodiac {
     &::before {
       display: block;
       content: "";
@@ -75,7 +74,6 @@
   line-height: 27px;
   margin: 0;
   margin-top: 19px;
-
 }
 
 .advantages__item-description {
@@ -96,19 +94,17 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: 1023px) {
-
   .advantages {
     padding: 97px 45px 100px;
-
     background-size: 768px 588px;
     background-image: url("../img/advantages/advantages-tablet@1x.jpg");
+
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/advantages/advantages-tablet@2x.jpg");
     }
-
   }
 
-  .advantages__title {
+  .advantages h1 {
     font-size: 26px;
     line-height: 26px;
   }
@@ -121,7 +117,7 @@
     width: 206px;
     padding: 20px 15px 20px 20px;
 
-    &:nth-child(1) {
+    &--ship {
       &::before {
         width: 21px;
         height: 26px;
@@ -129,16 +125,15 @@
       }
     }
 
-    &:nth-child(2) {
+    &--allinclusive {
       &::before {
         width: 33px;
         height: 19px;
         margin-top: 9px;
-        margin-bottom: 23px;
       }
     }
 
-    &:nth-child(3) {
+    &--zodiac {
       padding-right: 16px;
 
       &::before {
@@ -152,15 +147,9 @@
 
   .advantages__item-title {
     line-height: 25px;
-    margin: 0;
-    margin-top: 19px;
-
   }
 
   .advantages__item-description {
-    margin: 0;
-    margin-top: 9px;
-
     &--allinclusive {
       width: 162px;
     }
@@ -172,38 +161,33 @@
 }
 
 @media (min-width: $mobile-width) and (max-width: 767px) {
-
   .advantages {
     padding: 58px 15px 31px;
 
     background-size: 320px 997px;
     background-image: url("../img/advantages/advantages-mobile@1x.jpg");
+
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/advantages/advantages-mobile@2x.jpg");
     }
-
   }
 
-  .advantages__title {
+  .advantages h1 {
     font-size: 24px;
     line-height: 36px;
   }
 
   .advantages__list {
     flex-direction: column;
-
-    margin: 0;
     margin-top: 30px;
-    padding: 0;
   }
 
   .advantages__item {
     width: 290px;
     padding: 20px;
-    background-color: $main;
     margin-bottom: 32px;
 
-    &:nth-child(1) {
+    &--ship {
       &::before {
         width: 21px;
         height: 26px;
@@ -211,17 +195,16 @@
       }
     }
 
-    &:nth-child(2) {
+    &--allinclusive {
       padding-right: 55px;
+
       &::before {
         width: 33px;
         height: 19px;
-        margin-top: 7px;
-        margin-bottom: 23px;
       }
     }
 
-    &:nth-child(3) {
+    &--zodiac {
       &::before {
         width: 38px;
         height: 13px;
@@ -235,7 +218,6 @@
   }
 
   .advantages__item-description {
-
     &--allinclusive {
       width: 223px;
     }
@@ -244,5 +226,4 @@
       width: 233px;
     }
   }
-
 }

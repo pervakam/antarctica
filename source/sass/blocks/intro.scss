@@ -1,30 +1,38 @@
 .intro__background {
   position: relative;
-  top: -73px;
+  padding: 271px 198px 256px;
+  text-align: left;
+
+  margin-top: -76px;
   z-index: 0;
 
-  width: 1366px;
+  background-color: #96bee2;
+  background-size: 1366px 650px;
+  background-repeat: no-repeat;
+  background-image: url("../img/intro/intro-desktop@1x.jpg");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/intro/intro-desktop@2x.jpg.jpg");
+  }
 }
 
 .intro__text {
   text-align: left;
   padding-left: 198px;
-  position: relative;
-  top: -420px;
-
 }
 
-.intro__title {
+.intro__background h1 {
   color: $main;
   font-weight: bold;
   font-size: 54px;
   line-height: 66px;
   letter-spacing: 0.8px;
 
-  margin-bottom: 14px;
+  margin-top: 0;
+  margin-bottom: 13px;
 }
 
-.intro__description {
+.intro__background p {
   color: $main;
   font-weight: normal;
   font-size: 20px;
@@ -38,7 +46,6 @@
   display: flex;
   justify-content: space-between;
   padding: 120px 103px 117px;
-  margin-top: -235px;
 }
 
 .intro__about-text {
@@ -46,14 +53,14 @@
   text-align: left;
 }
 
-.intro__about-title {
+.intro__about-text h1 {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
   margin-top: 56px;
 }
 
-.intro__about-description {
+.intro__about-text p {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -64,21 +71,27 @@
 
 @media (min-width: $tablet-width) and (max-width: 1023px) {
   .intro__background {
-    top: -61px;
-    width: 768px;
+    padding: 270px 45px 256px;
+    margin-top: -55px;
+
+    background-size: 768px 638px;
+    background-image: url("../img/intro/intro-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/intro/intro-tablet@2x.jpg.jpg");
+    }
   }
 
   .page-main__intro-pic {
-    width: 768px;
+    width: $tablet-width;
     margin-top: -4px;
   }
 
   .intro__text {
     padding-left: 46px;
-    top: -408px;
   }
 
-  .intro__title {
+  .intro__background h1 {
     font-size: 50px;
     line-height: 61px;
     letter-spacing: 0.65px;
@@ -86,22 +99,20 @@
     margin-bottom: 12px;
   }
 
-  .intro__description {
+  .intro__background p {
     font-size: 18px;
     line-height: 22px;
-    margin-top: 0;
   }
 
   .intro__about {
     padding: 99px 45px 93px;
-    margin-top: -212px;
   }
 
   .intro__about-text {
     width: 326px;
   }
 
-  .intro__about-title {
+  .intro__about-text h1 {
     font-size: 26px;
     line-height: 36px;
 
@@ -109,10 +120,7 @@
     margin-bottom: 14px;
   }
 
-  .intro__about-description {
-    font-size: 16px;
-    line-height: 24px;
-
+  .intro__about-text p {
     width: 324px;
     margin-top: 0;
     margin-bottom: 0;
@@ -125,20 +133,20 @@
 }
 
 @media (min-width: $mobile-width) and (max-width: 767px) {
-
-  .intro {
-    margin-top: -62px;
-  }
-
   .intro__background {
-    top: 0;
-    width: 320px;
-    box-sizing: border-box;
-    padding-bottom: 165px;
+    padding: 178px 15px 162px;
+    margin-top: -62px;
+
+    background-size: 320px 500px;
+    background-image: url("../img/intro/intro-mobile@1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/intro/intro-mobile@2x.jpg.jpg");
+    }
   }
 
   .page-main__intro-pic {
-    width: 320px;
+    width: $mobile-width;
     height: 500px;
   }
 
@@ -148,14 +156,14 @@
     margin-top: -328px;
   }
 
-  .intro__title {
+  .intro__background h1 {
     font-size: 36px;
     line-height: 45px;
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  .intro__description {
+  .intro__background p {
     font-size: 16px;
     line-height: 22px;
     margin-top: 11px;
@@ -169,16 +177,15 @@
 
   .intro__about-text {
     width: 290px;
-    text-align: left;
   }
 
-  .intro__about-title {
+  .intro__about-text h1 {
     font-size: 24px;
     line-height: 34px;
     margin-top: 0;
   }
 
-  .intro__about-description {
+  .intro__about-text p {
     margin-top: 0;
     margin-bottom: 33px;
   }

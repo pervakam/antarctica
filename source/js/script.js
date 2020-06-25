@@ -15,8 +15,4 @@ var closeMenu = function () {
   logo.classList.toggle('page-header__logo--white');
 };
 
-
 button.addEventListener('click', closeMenu);
-
-
-

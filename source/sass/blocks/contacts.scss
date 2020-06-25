@@ -19,17 +19,15 @@
     position: absolute;
     top: 217px;
     left: 249px;
-
   }
 }
 
 .contacts__info {
   padding: 74px 0 0 100px;
   text-align: left;
-
 }
 
-.contacts__info-description {
+.contacts__info p {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -52,7 +50,7 @@
 
   margin-bottom: 21px;
 
-  &:nth-child(1) {
+  &--adress {
     &::before {
       display: inline-block;
       vertical-align: middle;
@@ -65,8 +63,7 @@
     }
   }
 
-  &:nth-child(2) {
-
+  &--tel {
     &::before {
       display: inline-block;
       vertical-align: middle;
@@ -86,13 +83,11 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: 1023px) {
-
   .contacts {
     padding: 100px 45px 96px;
   }
 
   .contacts__map {
-
     &::after {
       top: 218px;
       left: 109px;
@@ -108,7 +103,7 @@
     padding: 66px 0 0 30px;
   }
 
-  .contacts__info-description {
+  .contacts__info p {
     margin-bottom: 27px;
   }
 
@@ -118,29 +113,24 @@
 
   .contacts__item {
     width: 260px;
-    letter-spacing: -0.1px;
-
     margin-bottom: 20px;
 
-    &:nth-child(1) {
+    &--adress {
       &::before {
         margin-top: 4px;
         margin-left: -28px;
-
       }
     }
 
-    &:nth-child(2) {
+    &--tel {
       &::before {
         margin-left: -28px;
-
       }
     }
   }
 }
 
 @media (min-width: $mobile-width) and (max-width: 767px) {
-
   .contacts {
     padding: 58px 15px 62px;
     flex-direction: column;
@@ -149,19 +139,10 @@
   .contacts__map {
     margin-top: 37px;
     order: 2;
-    position: relative;
 
     &::after {
-      display: block;
-      content: "";
-      background: url("../img/contacts/mark.svg");
-      width: 18px;
-      height: 22px;
-
-      position: absolute;
       top: 224px;
       left: 112px;
-
     }
   }
 
@@ -173,41 +154,29 @@
   .contacts__info {
     order: 1;
     padding: 0;
-    text-align: left;
-
   }
 
-  .contacts__info-description {
+  .contacts__info p {
     margin-bottom: 27px;
-  }
-
-  .contacts__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
   }
 
   .contacts__item {
     width: 260px;
-    letter-spacing: -0.1px;
     margin-left: 28px;
-
     margin-bottom: 19px;
 
-    &:nth-child(1) {
+    &--adress {
       &::before {
         margin-top: 4px;
         margin-left: -28px;
-
       }
     }
 
-    &:nth-child(2) {
+    &--tel {
       margin-bottom: 0;
+
       &::before {
         margin-left: -28px;
-
-
       }
     }
   }

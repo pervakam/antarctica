@@ -29,6 +29,10 @@
   text-decoration: none;
 
   margin-left: 30px;
+
+  &:hover {
+    color: #96bee2;
+  }
 }
 
 .page-footer__social-networks {
@@ -44,6 +48,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover path {
+    fill: #96bee2;
   }
 }
 
@@ -65,7 +73,7 @@
 
 @media (min-width: $tablet-width) and (max-width: 1023px) {
   .page-footer {
-    width: 768px;
+    width: $tablet-width;
     padding: 47px 45px;
   }
 
@@ -89,7 +97,6 @@
 
     margin-left: 0;
     margin-right: 19px;
-
   }
 
   .page-footer__social-networks {
@@ -118,11 +125,9 @@
 
 @media (min-width: $mobile-width) and (max-width: 767px) {
   .page-footer {
-    box-sizing: border-box;
-    width: 320px;
+    width: $mobile-width;
     flex-direction: column;
     padding: 40px 0 35px 15px;
-
   }
 
   .page-footer__logo {
@@ -137,7 +142,6 @@
     flex-direction: column;
     text-align: left;
     margin: 0;
-
   }
 
   .page-footer__nav-item {
@@ -149,10 +153,7 @@
   }
 
   .page-footer__social-networks {
-    display: flex;
     justify-content: left;
-    padding-left: 0;
-
     margin-top: 10px;
   }
 
