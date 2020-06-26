@@ -582,8 +582,11 @@ body {
   margin-right: 32px; }
   .page-footer__social-networks-item:last-child {
     margin-right: 0; }
-  .page-footer__social-networks-item:hover path {
+  .page-footer__social-networks-item:hover .page-footer__icon-fill {
     fill: #96bee2; }
+
+.page-footer__icon-fill {
+  fill: #f9fbfd; }
 
 .page-footer__facebook {
   width: 11px;

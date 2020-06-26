@@ -54,9 +54,15 @@
     margin-right: 0;
   }
 
-  &:hover path {
-    fill: #96bee2;
+  &:hover {
+    .page-footer__icon-fill {
+      fill: #96bee2;
+    }
   }
+}
+
+.page-footer__icon-fill {
+  fill: $main;
 }
 
 .page-footer__facebook {
