@@ -8,10 +8,14 @@
   background-color: $back;
 }
 
-.page-footer__logo {
-  background: url("../img/logo/logo-desktop.svg") no-repeat;
+.page-footer__logo-img {
   width: 70px;
   height: 38px;
+  margin: 0;
+}
+
+.page-footer__logo-fill {
+  fill: $main;
 }
 
 .page-footer__nav {
@@ -77,8 +81,7 @@
     padding: 47px 45px;
   }
 
-  .page-footer__logo {
-    background: url("../img/logo/logo-tablet.svg") no-repeat;
+  .page-footer__logo-img {
     width: 38px;
     height: 20px;
 
@@ -127,11 +130,14 @@
   .page-footer {
     width: $mobile-width;
     flex-direction: column;
-    padding: 40px 0 35px 15px;
+    padding: 40px 0 34px 15px;
   }
 
   .page-footer__logo {
-    background: url("../img/logo/logo-mobile.svg") no-repeat;
+    text-align: left;
+  }
+
+  .page-footer__logo-img {
     width: 42px;
     height: 22px;
     margin-bottom: 28px;
@@ -142,6 +148,7 @@
     flex-direction: column;
     text-align: left;
     margin: 0;
+    margin-top: -3px;
   }
 
   .page-footer__nav-item {

@@ -22,6 +22,10 @@
   margin: 0;
 }
 
+.page-header__logo-fill {
+  fill: $main;
+}
+
 .page-header__toggle {
   display: none;
 }
@@ -130,21 +134,14 @@
   .page-header__logo-img {
     width: 42px;
     height: 22px;
-
-    fill: $back;
-    & path {
-      fill: $back;
-    }
   }
 
-  .page-header__logo--white {
-    width: 42px;
-    height: 22px;
+  .page-header__logo-fill {
+    fill: $back;
+  }
 
+  .page-header__logo-fill--white {
     fill: $main;
-    & path {
-      fill: $main;
-    }
   }
 
   .page-header__nav {
