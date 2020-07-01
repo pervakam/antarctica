@@ -1,17 +1,18 @@
 .page-main {
   margin: 0 auto;
   width: 1366px;
+  flex-grow: 1;
 }
 
 
-@media (min-width: $tablet-width) and (max-width: 1023px) {
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
   .page-main {
-    width: $tablet-width;
+    width: $tablet-min-width;
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: 767px) {
+@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
   .page-main {
-    width: $mobile-width;
+    width: $mobile-min-width;
   }
 }

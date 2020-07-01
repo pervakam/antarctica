@@ -1,5 +1,5 @@
 .booking {
-  padding: 51px 163px 48px;
+  padding: 51px 163px 47px;
   display: flex;
   justify-content: space-between;
 
@@ -59,10 +59,12 @@
 }
 
 .booking__form input {
+  cursor: pointer;
   box-sizing: border-box;
 
   margin-bottom: 19px;
   padding: 12px 0 10px 15px;
+  border-radius: 0;
 
   &::placeholder {
     font-weight: normal;
@@ -83,34 +85,35 @@
   margin-bottom: 0;
 }
 
-.booking__form-agree {
-  letter-spacing: -0.1px;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 10px;
-  color: white;
-
-  margin-top: -10px;
-  margin-left: 24px;
-
-  &::before {
-    content: "";
-    display: inline-block;
-    height: 18px;
-    width: 18px;
-    background-color: $main;
-    vertical-align: middle;
-
-    margin-left: -24px;
-    margin-top: -3px;
-    margin-right: 6px;
-  }
-}
-
 .booking__form input[type="checkbox"] {
   opacity: 0;
 
-  &:checked + .booking__form-agree {
+  & + label {
+    letter-spacing: -0.1px;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    color: white;
+
+    margin-top: -10px;
+    margin-left: 24px;
+
+    &::before {
+      cursor: pointer;
+      content: "";
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      background-color: $main;
+      vertical-align: middle;
+
+      margin-left: -24px;
+      margin-top: -3px;
+      margin-right: 6px;
+    }
+  }
+
+  &:checked + label {
     &::before {
       background-image: url("../img/booking/tick.svg");
       background-repeat: no-repeat;
@@ -119,21 +122,20 @@
   }
 }
 
-.booking__form-button {
+.booking__form button {
   margin-top: 30px;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
-  padding: 12px 89px 11px 90px;
+  padding: 11px 85px 9px 89px;
   cursor: pointer;
 
   &:hover {
-    color: $main;
-    background-color: $back;
+    background-color: $text;
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: 1023px) {
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
   .booking {
     padding: 89px 174px 100px;
     flex-direction: column;
@@ -141,7 +143,7 @@
     background-image: url("../img/booking/background-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/booking/background-tabletdesktop@2x.jpg");
+      background-image: url("../img/booking/background-tablet@2x.jpg");
     }
   }
 
@@ -181,7 +183,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: 767px) {
+@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
   .booking {
     padding: 60px 15px 65px;
     flex-direction: column;
@@ -223,25 +225,25 @@
     line-height: 25px;
   }
 
-  .booking__form-agree {
-    position: relative;
-    margin-top: -10px;
-    margin-left: 27px;
-
-    &::before {
-      position: absolute;
-      height: 20px;
-      width: 20px;
-      margin: 0;
-      left: -27px;
-    }
-  }
-
   .booking__form input[type="checkbox"] {
     line-height: 12px;
     margin-top: -12px;
     margin-left: 29px;
     position: relative;
+
+    & + label {
+      position: relative;
+      margin-top: -10px;
+      margin-left: 27px;
+
+      &::before {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        margin: 0;
+        left: -27px;
+      }
+    }
 
     &::before {
       position: absolute;
@@ -254,7 +256,7 @@
       margin: 0;
     }
 
-    &:checked + .booking__form-agree {
+    &:checked + label {
       &::before {
         background-position: 4px 6px;
       }
@@ -265,8 +267,8 @@
     margin-bottom: 10px;
   }
 
-  .booking__form-button {
+  .booking__form button {
     margin-top: 28px;
-    padding: 12px 0 11px 0;
+    padding: 12px 0 9px;
   }
 }

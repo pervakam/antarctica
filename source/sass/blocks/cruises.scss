@@ -156,6 +156,8 @@
 }
 
 .cruises__card-description {
+  color: $text;
+  font-weight: normal;
   margin-top: -1px;
   padding-bottom: 8px;
 
@@ -173,9 +175,9 @@
   color: $back;
 
   &:hover {
-    color: $main;
-    background-color: $back;
+    background-color: $text;
   }
+
 }
 
 .cruises__card-info {
@@ -184,7 +186,7 @@
 }
 
 
-@media (min-width: $tablet-width) and (max-width: 1023px) {
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
   .cruises {
     padding: 97px 60px 100px;
   }
@@ -298,7 +300,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: 767px) {
+@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
   .cruises {
     padding: 61px 25px 34px;
   }

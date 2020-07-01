@@ -6,6 +6,8 @@
   justify-content: left;
   padding: 50px 103px 50px 105px;
   background-color: $back;
+
+  flex-shrink: 0;
 }
 
 .page-footer__logo-img {
@@ -81,9 +83,9 @@
 }
 
 
-@media (min-width: $tablet-width) and (max-width: 1023px) {
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
   .page-footer {
-    width: $tablet-width;
+    width: $tablet-min-width;
     padding: 47px 45px;
   }
 
@@ -132,9 +134,9 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: 767px) {
+@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
   .page-footer {
-    width: $mobile-width;
+    width: $mobile-min-width;
     flex-direction: column;
     padding: 40px 0 34px 15px;
   }

@@ -1,7 +1,10 @@
-$main:          #f9fbfd;
-$back:          #011c40;
+$main:                 #f9fbfd;
+$back:                 #011c40;
+$text:                 #d8d8d9;
 
-$tablet-width:     768px;
-$mobile-width:     320px;
+$tablet-min-width:     768px;
+$tablet-max-width:     1023px;
+$mobile-min-width:     320px;
+$mobile-max-width:     767px;
 
-$retina-dppx:      1.5dppx;
+$retina-dppx:          1.5dppx;

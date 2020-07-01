@@ -80,9 +80,13 @@
 .contacts__item-tel {
   text-decoration: none;
   color: $back;
+
+  &:hover{
+    color: #96bee2;
+  }
 }
 
-@media (min-width: $tablet-width) and (max-width: 1023px) {
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
   .contacts {
     padding: 100px 45px 96px;
   }
@@ -130,7 +134,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: 767px) {
+@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
   .contacts {
     padding: 58px 15px 60px;
     flex-direction: column;

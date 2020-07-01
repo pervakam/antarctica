@@ -1,7 +1,9 @@
 .advantages {
-  padding: 108px 103px 120px;
+  box-sizing: border-box;
+  padding: 108px 103px 100px;
+  min-height: 562px;
   background-color: #96bee2;
-  background-size: 1366px 562px;
+  background-size: 1366px auto;
   background-repeat: no-repeat;
   background-image: url("../img/advantages/advantages-desktop@1x.jpg");
 
@@ -20,6 +22,7 @@
 .advantages__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   margin-top: 48px;
@@ -31,6 +34,7 @@
   box-sizing: border-box;
   text-align: left;
   padding: 30px 30px 25px;
+  margin-bottom: 20px;
   background-color: $main;
 
   &--ship {
@@ -93,7 +97,7 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: 1023px) {
+@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
   .advantages {
     padding: 98px 45px 99px;
     background-size: 768px 588px;
@@ -160,7 +164,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: 767px) {
+@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
   .advantages {
     padding: 58px 15px 31px;
 
