@@ -1,12 +1,16 @@
 .intro__about {
+  max-width: 1160px;
+  //box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   padding: 120px 103px 117px;
+  margin: 0 auto;
 }
 
 .intro__about-text {
-  width: 520px;
+  max-width: 520px;
   text-align: left;
+  //height: auto;
 }
 
 .intro__about-text h1 {
@@ -23,6 +27,13 @@
   letter-spacing: -0.15px;
 
   margin-top: 25px;
+}
+
+.intro__about-img {
+  //object-fit: cover;
+  max-width: 100%;
+  //max-width: 560px;
+  height: auto;
 }
 
 @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
