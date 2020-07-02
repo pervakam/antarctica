@@ -1,13 +1,16 @@
 .page-footer {
+  width: 100%;
+  background-color: $back;
+  flex-shrink: 0;
+}
+
+.page-footer__wrapper {
   margin: 0 auto;
-  width: 1366px;
+  max-width: 1366px;
   box-sizing: border-box;
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   padding: 50px 103px 50px 105px;
-  background-color: $back;
-
-  flex-shrink: 0;
 }
 
 .page-footer__logo-img {
@@ -22,7 +25,6 @@
 
 .page-footer__nav {
   margin-top: 10px;
-  margin-right: 338px;
   margin-left: 8px;
 }
 
@@ -84,8 +86,9 @@
 
 
 @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-  .page-footer {
-    width: $tablet-min-width;
+
+  .page-footer__wrapper {
+    max-width: 1023px;
     padding: 47px 45px;
   }
 
@@ -99,7 +102,6 @@
 
   .page-footer__nav {
     margin-top: 0;
-    margin-right: 69px;
   }
 
   .page-footer__nav-item {
@@ -135,8 +137,9 @@
 }
 
 @media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
-  .page-footer {
-    width: $mobile-min-width;
+
+  .page-footer__wrapper {
+    max-width: 767px;
     flex-direction: column;
     padding: 40px 0 34px 15px;
   }

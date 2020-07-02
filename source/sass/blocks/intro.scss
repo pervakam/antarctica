@@ -1,6 +1,6 @@
 .intro__about {
-  max-width: 1160px;
-  //box-sizing: border-box;
+  max-width: 1366px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   padding: 120px 103px 117px;
@@ -10,7 +10,7 @@
 .intro__about-text {
   max-width: 520px;
   text-align: left;
-  //height: auto;
+  margin-right: 20px;
 }
 
 .intro__about-text h1 {
@@ -30,20 +30,20 @@
 }
 
 .intro__about-img {
-  //object-fit: cover;
+  object-fit: cover;
   max-width: 100%;
-  //max-width: 560px;
-  height: auto;
+  height: 100%;
 }
 
 @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
 
   .intro__about {
+    max-width: 1023px;
     padding: 99px 45px 93px;
   }
 
   .intro__about-text {
-    width: 326px;
+    min-width: 326px;
   }
 
   .intro__about-text h1 {
@@ -55,13 +55,13 @@
   }
 
   .intro__about-text p {
-    width: 324px;
+    min-width: 324px;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   .intro__about-img {
-    width: 324px;
+    max-width: 324px;
     height: 264px;
   }
 }
@@ -69,16 +69,20 @@
 @media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
 
   .intro__about {
+    max-width: 767px;
     flex-direction: column;
     padding: 55px 15px 61px;
     margin-top: 0;
   }
 
   .intro__about-text {
-    width: 290px;
+    max-width: 100%;
+    min-width: 290px;
+    margin: 0;
   }
 
   .intro__about-text h1 {
+    min-width: 290px;
     font-size: 24px;
     line-height: 34px;
     margin-top: 0;
@@ -90,7 +94,8 @@
   }
 
   .intro__about-img {
-    width: 290px;
-    height: 186px;
+    width: 100%;
+    height: auto;
+
   }
 }

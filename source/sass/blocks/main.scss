@@ -1,18 +1,18 @@
 .page-main {
   margin: 0 auto;
-  max-width: 1366px;
+  width: 100%;
   flex-grow: 1;
 }
 
-
-@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-  .page-main {
-    max-width: $tablet-max-width;
-  }
-}
-
-@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
-  .page-main {
-    max-width: $mobile-max-width;
-  }
-}
+//
+//@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+//  .page-main {
+//    max-width: $tablet-max-width;
+//  }
+//}
+//
+//@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
+//  .page-main {
+//    max-width: $mobile-max-width;
+//  }
+//}

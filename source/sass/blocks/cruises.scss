@@ -1,5 +1,7 @@
 .cruises {
-  padding: 115px 118px 120px;
+  width: auto;
+  box-sizing: border-box;
+  padding: 115px 0 120px;
 }
 
 .cruises__title {
@@ -10,21 +12,26 @@
 }
 
 .cruises__list {
+  max-width: 1366px;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .cruises__item {
   box-sizing: border-box;
-  width: 260px;
+  width: calc(100%/4 - 30px);
+  max-width: 260px;
   text-align: left;
-  margin-top: 31px;
+  margin: 31px 15px;
+
   background-color: #638ec3;
-  background-size: 260px 386px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 
   &--astoria {
@@ -169,7 +176,8 @@
 .cruises__booking {
   font-size: 14px;
   line-height: 21px;
-  padding: 10px 46px 10px 47px;
+  padding: 10px 0;
+  text-align: center;
   cursor: pointer;
   text-decoration: none;
   color: $back;
@@ -188,7 +196,12 @@
 
 @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
   .cruises {
-    padding: 97px 60px 100px;
+    padding: 97px 0 100px;
+  }
+
+  .cruises__list {
+    max-width: 1023px;
+    justify-content: center;
   }
 
   .cruises__title {
@@ -302,7 +315,7 @@
 
 @media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
   .cruises {
-    padding: 61px 25px 34px;
+    padding: 61px 0 34px;
   }
 
   .cruises__title {
@@ -311,15 +324,18 @@
   }
 
   .cruises__list {
+    max-width: 767px;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: stretch;
+    padding: 0 25px;
   }
 
   .cruises__item {
-    width: 270px;
-    margin-top: 0;
-    margin-bottom: 31px;
-    background-size: 270px 386px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 31px;
+    background-size: cover;
 
 
     &--astoria {

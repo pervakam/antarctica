@@ -1,15 +1,19 @@
 .advantages {
-  box-sizing: border-box;
-  padding: 108px 103px 100px;
   min-height: 562px;
+  width: auto;
+  box-sizing: border-box;
+  padding: 108px 0 100px;
   background-color: #96bee2;
-  background-size: 1366px auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/advantages/advantages-desktop@1x.jpg");
+
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/advantages/advantages-desktop@2x.jpg");
   }
+
+  object-fit: cover;
 }
 
 .advantages h1 {
@@ -24,18 +28,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
-  margin-top: 48px;
-  padding: 0;
+  margin: 48px auto 0;
+  padding: 0 103px;
+  max-width: 1366px;
+  box-sizing: border-box;
 }
 
 .advantages__item {
-  width: 360px;
+  width: calc(100%/3 - 27px);
   box-sizing: border-box;
   text-align: left;
   padding: 30px 30px 25px;
   margin-bottom: 20px;
   background-color: $main;
+  margin-right: 40px;
 
   &--ship {
     &::before {
@@ -60,6 +66,7 @@
   }
 
   &--zodiac {
+    margin-right: 0;
     &::before {
       display: block;
       content: "";
@@ -68,6 +75,7 @@
       height: 15px;
       margin-top: 9px;
       margin-bottom: 27px;
+
     }
   }
 }
@@ -89,18 +97,17 @@
   margin-top: 9px;
 
   &--allinclusive {
-    width: 280px;
+    max-width: 280px;
   }
 
   &--zodiac {
-    width: 241px;
+    max-width: 241px;
   }
 }
 
 @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
   .advantages {
-    padding: 98px 45px 79px;
-    background-size: 768px 588px;
+    padding: 98px 0 79px;
     background-image: url("../img/advantages/advantages-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dppx) {
@@ -115,10 +122,11 @@
 
   .advantages__list {
     margin-top: 54px;
+    padding: 0 45px;
+    max-width: 1023px;
   }
 
   .advantages__item {
-    width: 206px;
     padding: 20px 15px 20px 20px;
 
     &--ship {
@@ -155,20 +163,19 @@
 
   .advantages__item-description {
     &--allinclusive {
-      width: 162px;
+      min-width: 162px;
     }
 
     &--zodiac {
-      width: 168px;
+      min-width: 168px;
     }
   }
 }
 
 @media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
   .advantages {
-    padding: 58px 15px 31px;
+    padding: 58px 0 31px;
 
-    background-size: 320px 997px;
     background-image: url("../img/advantages/advantages-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dppx) {
@@ -184,10 +191,12 @@
   .advantages__list {
     flex-direction: column;
     margin-top: 30px;
+    padding: 0 15px;
+    max-width: 767px;
   }
 
   .advantages__item {
-    width: 290px;
+    width: 100%;
     padding: 20px;
     margin-bottom: 32px;
 
@@ -225,11 +234,11 @@
     margin-top: 8px;
 
     &--allinclusive {
-      width: 223px;
+      min-width: 223px;
     }
 
     &--zodiac {
-      width: 233px;
+      min-width: 233px;
     }
   }
 }
