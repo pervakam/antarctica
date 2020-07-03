@@ -99,12 +99,10 @@
   height: 100%;
 }
 
-@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-
+@media (max-width: $tablet-max-width) {
   .contacts__wrapper {
-    max-width: 1023px;
+    max-width: $tablet-max-width;
     padding: 100px 45px 96px;
-
   }
 
   .contacts__map {
@@ -150,10 +148,9 @@
   }
 }
 
-@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
-
+@media (max-width: $mobile-max-width) {
   .contacts__wrapper {
-    max-width: 1366px;
+    max-width: $mobile-max-width;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

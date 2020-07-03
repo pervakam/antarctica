@@ -25,7 +25,7 @@
 
 .cruises__item {
   box-sizing: border-box;
-  width: calc(100%/4 - 30px);
+  width: calc(100% / 4 - 30px);
   max-width: 260px;
   text-align: left;
   margin: 31px 15px;
@@ -185,7 +185,6 @@
   &:hover {
     background-color: $text;
   }
-
 }
 
 .cruises__card-info {
@@ -194,13 +193,13 @@
 }
 
 
-@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+@media (max-width: $tablet-max-width) {
   .cruises {
     padding: 97px 0 100px;
   }
 
   .cruises__list {
-    max-width: 1023px;
+    max-width: $tablet-max-width;
     justify-content: center;
   }
 
@@ -313,7 +312,7 @@
   }
 }
 
-@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
+@media (max-width: $mobile-max-width) {
   .cruises {
     padding: 61px 0 34px;
   }
@@ -324,7 +323,7 @@
   }
 
   .cruises__list {
-    max-width: 767px;
+    max-width: $mobile-max-width;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: stretch;

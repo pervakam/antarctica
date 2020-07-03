@@ -35,10 +35,9 @@
   height: 100%;
 }
 
-@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
-
+@media (max-width: $tablet-max-width) {
   .intro__about {
-    max-width: 1023px;
+    max-width: $tablet-max-width;
     padding: 99px 45px 93px;
   }
 
@@ -66,10 +65,9 @@
   }
 }
 
-@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
-
+@media (max-width: $mobile-max-width) {
   .intro__about {
-    max-width: 767px;
+    max-width: $mobile-max-width;
     flex-direction: column;
     padding: 55px 15px 61px;
     margin-top: 0;
@@ -89,6 +87,7 @@
   }
 
   .intro__about-text p {
+    min-width: 290px;
     margin-top: 0;
     margin-bottom: 33px;
   }
@@ -96,6 +95,5 @@
   .intro__about-img {
     width: 100%;
     height: auto;
-
   }
 }

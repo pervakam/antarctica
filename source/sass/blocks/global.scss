@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body {
   min-width: 1024px;
   background-color: $main;
@@ -12,23 +16,15 @@ body {
   overflow-x: hidden;
 }
 
-html {
-  height: 100%;
-}
-
-@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+@media (max-width: $tablet-max-width) {
   body {
     min-width: $tablet-min-width;
-    margin: 0 auto;
-
-
   }
 }
 
-@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
+@media (max-width: $mobile-max-width) {
   body {
     min-width: $mobile-min-width;
-    margin: 0 auto;
   }
 }
 

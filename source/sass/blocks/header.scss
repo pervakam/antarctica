@@ -101,7 +101,7 @@
   margin-top: 0;
 }
 
-@media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) {
+@media (max-width: $tablet-max-width) {
   .page-header {
     background-image: url("../img/intro/intro-tablet@1x.jpg");
 
@@ -113,9 +113,9 @@
   }
 
   .page-header__wrapper {
-    max-width: 1023px;
+    max-width: $tablet-max-width;
     padding: 30px 45px 0;
- }
+  }
 
   .page-header__logo-img {
     width: 38px;
@@ -137,7 +137,7 @@
 
   .page-header__intro {
     padding: 215px 0 0 45px;
-    width: 768px;
+    width: $tablet-min-width;
   }
 
   .page-header__intro h1 {
@@ -154,7 +154,7 @@
   }
 }
 
-@media (min-width: $mobile-min-width) and (max-width: $mobile-max-width) {
+@media (max-width: $mobile-max-width) {
   .page-header {
     min-height: 500px;
     flex-direction: column;
@@ -168,7 +168,7 @@
   }
 
   .page-header__wrapper {
-    max-width: 767px;
+    max-width: $mobile-max-width;
     padding: 0;
   }
 
@@ -244,7 +244,6 @@
   .page-header__nav-modal {
     position: absolute;
     width: 100%;
-
   }
 
   .page-header__nav-list {
@@ -288,7 +287,6 @@
     padding: 112px 15px 0;
     width: 320px;
     margin: 0;
-
   }
 
   .page-header__intro h1 {

@@ -314,6 +314,9 @@ template {
 [hidden] {
   display: none; }
 
+html {
+  height: 100%; }
+
 body {
   min-width: 1024px;
   background-color: #f9fbfd;
@@ -332,18 +335,13 @@ body {
           flex-direction: column;
   overflow-x: hidden; }
 
-html {
-  height: 100%; }
-
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   body {
-    min-width: 768px;
-    margin: 0 auto; } }
+    min-width: 768px; } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   body {
-    min-width: 320px;
-    margin: 0 auto; } }
+    min-width: 320px; } }
 
 @font-face {
   font-family: "Montserrat";
@@ -478,15 +476,15 @@ html {
   letter-spacing: -0.1px;
   margin-top: 0; }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .page-header {
     background-image: url("../img/intro/intro-tablet@1x.jpg");
     min-height: 638px; } }
-  @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .page-header {
       background-image: url("../img/intro/intro-tablet@2x.jpg"); } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .page-header__wrapper {
     max-width: 1023px;
     padding: 30px 45px 0; }
@@ -512,7 +510,7 @@ html {
     font-size: 18px;
     line-height: 22px; } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .page-header {
     min-height: 500px;
     -webkit-box-orient: vertical;
@@ -521,11 +519,11 @@ html {
             flex-direction: column;
     background-size: 100% auto;
     background-image: url("../img/intro/intro-mobile@1x.jpg"); } }
-  @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .page-header {
       background-image: url("../img/intro/intro-mobile@2x.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .page-header__wrapper {
     max-width: 767px;
     padding: 0; }
@@ -703,7 +701,7 @@ html {
   width: 20px;
   height: 16px; }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .page-footer__wrapper {
     max-width: 1023px;
     padding: 47px 45px; }
@@ -733,7 +731,7 @@ html {
     width: 16px;
     height: 13px; } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .page-footer__wrapper {
     max-width: 767px;
     -webkit-box-orient: vertical;
@@ -833,7 +831,7 @@ html {
   max-width: 100%;
   height: 100%; }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .intro__about {
     max-width: 1023px;
     padding: 99px 45px 93px; }
@@ -852,7 +850,7 @@ html {
     max-width: 324px;
     height: 264px; } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .intro__about {
     max-width: 767px;
     -webkit-box-orient: vertical;
@@ -871,6 +869,7 @@ html {
     line-height: 34px;
     margin-top: 0; }
   .intro__about-text p {
+    min-width: 290px;
     margin-top: 0;
     margin-bottom: 33px; }
   .intro__about-img {
@@ -916,7 +915,7 @@ html {
           box-sizing: border-box; }
 
 .advantages__item {
-  width: calc(100%/3 - 27px);
+  width: calc(100% / 3 - 27px);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: left;
@@ -967,15 +966,15 @@ html {
   .advantages__item-description--zodiac {
     max-width: 241px; }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .advantages {
     padding: 98px 0 79px;
     background-image: url("../img/advantages/advantages-tablet@1x.jpg"); } }
-  @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .advantages {
       background-image: url("../img/advantages/advantages-tablet@2x.jpg"); } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .advantages h1 {
     font-size: 26px;
     line-height: 26px; }
@@ -1007,15 +1006,15 @@ html {
   .advantages__item-description--zodiac {
     min-width: 168px; } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .advantages {
     padding: 58px 0 31px;
     background-image: url("../img/advantages/advantages-mobile@1x.jpg"); } }
-  @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .advantages {
       background-image: url("../img/advantages/advantages-mobile@2x.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .advantages h1 {
     font-size: 24px;
     line-height: 36px; }
@@ -1084,7 +1083,7 @@ html {
 .cruises__item {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: calc(100%/4 - 30px);
+  width: calc(100% / 4 - 30px);
   max-width: 260px;
   text-align: left;
   margin: 31px 15px;
@@ -1210,7 +1209,7 @@ html {
   margin-left: -2px;
   margin-top: -3px; }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .cruises {
     padding: 97px 0 100px; }
   .cruises__list {
@@ -1225,60 +1224,60 @@ html {
     background-size: 309px 386px; }
     .cruises__item--astoria {
       background-image: url("../img/cruises/astoria-tablet@1x.jpg"); } }
-    @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
       .cruises__item--astoria {
         background-image: url("../img/cruises/astoria-tablet@2x.jpg"); } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .cruises__item--elain {
       background-image: url("../img/cruises/elain-tablet@1x.jpg"); } }
-    @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
       .cruises__item--elain {
         background-image: url("../img/cruises/elain-tablet@2x.jpg"); } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .cruises__item--atlantis {
       background-image: url("../img/cruises/atlantis-tablet@1x.jpg"); } }
-    @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
       .cruises__item--atlantis {
         background-image: url("../img/cruises/atlantis-tablet@2x.jpg"); } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .cruises__item--odyssey {
       background-image: url("../img/cruises/odyssey-tablet@1x.jpg"); } }
-    @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
       .cruises__item--odyssey {
         background-image: url("../img/cruises/odyssey-tablet@2x.jpg"); } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .cruises__item--olympia {
       background-image: url("../img/cruises/olympia-tablet@1x.jpg"); } }
-    @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
       .cruises__item--olympia {
         background-image: url("../img/cruises/olympia-tablet@2x.jpg"); } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .cruises__item--aurora {
       background-image: url("../img/cruises/aurora-tablet@1x.jpg"); } }
-    @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
       .cruises__item--aurora {
         background-image: url("../img/cruises/aurora-tablet@2x.jpg"); } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .cruises__item--leonor {
       background-image: url("../img/cruises/leonor-tablet@1x.jpg"); } }
-    @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
       .cruises__item--leonor {
         background-image: url("../img/cruises/leonor-tablet@2x.jpg"); } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .cruises__item--minion {
       background-image: url("../img/cruises/minion-tablet@1x.jpg"); } }
-    @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
       .cruises__item--minion {
         background-image: url("../img/cruises/minion-tablet@2x.jpg"); } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     .cruises__item:hover .cruises__card {
       opacity: 1; }
     .cruises__item:hover .cruises__item-title {
@@ -1297,7 +1296,7 @@ html {
   .cruises__card-info {
     margin-top: -5px; } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .cruises {
     padding: 61px 0 34px; }
   .cruises__title {
@@ -1322,60 +1321,60 @@ html {
     background-size: cover; }
     .cruises__item--astoria {
       background-image: url("../img/cruises/astoria-mobile@1x.jpg"); } }
-    @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
       .cruises__item--astoria {
         background-image: url("../img/cruises/astoria-mobile@2x.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .cruises__item--elain {
       background-image: url("../img/cruises/elain-mobile@1x.jpg"); } }
-    @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
       .cruises__item--elain {
         background-image: url("../img/cruises/elain-mobile@2x.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .cruises__item--atlantis {
       background-image: url("../img/cruises/atlantis-mobile@1x.jpg"); } }
-    @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
       .cruises__item--atlantis {
         background-image: url("../img/cruises/atlantis-mobile@2x.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .cruises__item--odyssey {
       background-image: url("../img/cruises/odyssey-mobile@1x.jpg"); } }
-    @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
       .cruises__item--odyssey {
         background-image: url("../img/cruises/odyssey-mobile@2x.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .cruises__item--olympia {
       background-image: url("../img/cruises/olympia-mobile@1x.jpg"); } }
-    @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
       .cruises__item--olympia {
         background-image: url("../img/cruises/olympia-mobile@2x.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .cruises__item--aurora {
       background-image: url("../img/cruises/aurora-mobile@1x.jpg"); } }
-    @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
       .cruises__item--aurora {
         background-image: url("../img/cruises/aurora-mobile@2x.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .cruises__item--leonor {
       background-image: url("../img/cruises/leonor-mobile@1x.jpg"); } }
-    @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
       .cruises__item--leonor {
         background-image: url("../img/cruises/leonor-mobile@2x.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .cruises__item--minion {
       background-image: url("../img/cruises/minion-mobile@1x.jpg"); } }
-    @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+    @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
       .cruises__item--minion {
         background-image: url("../img/cruises/minion-mobile@2x.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .cruises__item:hover .cruises__card {
       opacity: 1; }
     .cruises__item:hover .cruises__item-title {
@@ -1527,16 +1526,16 @@ html {
   .booking__form button:hover {
     background-color: #d8d8d9; }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .booking {
     min-height: 805px;
     padding: 89px 0 100px;
     background-image: url("../img/booking/background-tablet@1x.jpg"); } }
-  @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 1.5dppx) {
     .booking {
       background-image: url("../img/booking/background-tablet@2x.jpg"); } }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .booking__wrapper {
     max-width: 1023px;
     padding: 0 174px;
@@ -1566,7 +1565,7 @@ html {
       margin-top: -5px;
       margin-right: 6px; } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .booking {
     min-height: 760px;
     padding: 60px 0 65px;
@@ -1575,11 +1574,11 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
     background-image: url("../img/booking/background-mobile@1x.jpg"); } }
-  @media (min-width: 320px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 320px) and (max-width: 767px) and (min-resolution: 1.5dppx) {
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .booking {
       background-image: url("../img/booking/background-mobile@2x.jpg"); } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .booking__wrapper {
     max-width: 767px;
     padding: 0 15px;
@@ -1635,7 +1634,9 @@ html {
     margin-bottom: 10px; }
   .booking__form button {
     margin-top: 28px;
-    padding: 12px 0 9px; } }
+    padding: 12px 0 9px;
+    border-radius: 0;
+    background-color: #f9fbfd; } }
 
 .contacts {
   width: 100%;
@@ -1720,7 +1721,7 @@ html {
   max-width: 100%;
   height: 100%; }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .contacts__wrapper {
     max-width: 1023px;
     padding: 100px 45px 96px; }
@@ -1745,9 +1746,9 @@ html {
     .contacts__item--tel::before {
       margin-left: -28px; } }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .contacts__wrapper {
-    max-width: 1366px;
+    max-width: 767px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: -webkit-box;
