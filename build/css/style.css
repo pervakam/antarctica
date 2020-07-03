@@ -1029,7 +1029,8 @@ body {
   .advantages__item {
     width: 100%;
     padding: 20px;
-    margin-bottom: 32px; }
+    margin-bottom: 32px;
+    margin-right: 0; }
     .advantages__item--ship::before {
       width: 21px;
       height: 26px;
@@ -1415,6 +1416,7 @@ body {
 .booking__about {
   text-align: left;
   margin-top: 165px;
+  margin-right: 100px;
   width: 500px; }
 
 .booking__about h1 {
@@ -1776,14 +1778,17 @@ body {
     width: 290px;
     height: 316px; }
   .contacts__info {
-    min-width: 290px;
+    max-width: 290px;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     padding: 0;
     margin: 0 auto; }
   .contacts__info p {
-    margin-bottom: 27px; }
+    margin-bottom: 27px;
+    max-width: 100%; }
+  .contacts__list {
+    margin-left: 0; }
   .contacts__item {
     width: 260px;
     margin-left: 28px;

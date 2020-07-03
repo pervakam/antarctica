@@ -175,7 +175,7 @@
   }
 
   .contacts__info {
-    min-width: 290px;
+    max-width: 290px;
     order: 1;
     padding: 0;
     margin: 0 auto;
@@ -183,6 +183,11 @@
 
   .contacts__info p {
     margin-bottom: 27px;
+    max-width: 100%;
+  }
+
+  .contacts__list {
+    margin-left: 0;
   }
 
   .contacts__item {
