@@ -1131,9 +1131,9 @@ body {
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
       .cruises__item--minion {
         background-image: url("../img/cruises/minion-desktop@2x.jpg"); } }
-  .cruises__item:hover .cruises__card {
+  .cruises__item:hover .cruises__card, .cruises__item:active .cruises__card {
     opacity: 1; }
-  .cruises__item:hover .cruises__item-title {
+  .cruises__item:hover .cruises__item-title, .cruises__item:active .cruises__item-title {
     opacity: 0; }
 
 .cruises__item-title,
@@ -1210,6 +1210,9 @@ body {
   margin-left: -2px;
   margin-top: -3px; }
 
+.cruises__card--touch {
+  opacity: 1; }
+
 @media (max-width: 1023px) {
   .cruises {
     padding: 97px 0 100px; }
@@ -1279,10 +1282,6 @@ body {
         background-image: url("../img/cruises/minion-tablet@2x.jpg"); } }
 
 @media (max-width: 1023px) {
-    .cruises__item:hover .cruises__card {
-      opacity: 1; }
-    .cruises__item:hover .cruises__item-title {
-      opacity: 0; }
   .cruises__card-title {
     padding-bottom: 14px; }
   .cruises__item-title {
@@ -1376,10 +1375,6 @@ body {
         background-image: url("../img/cruises/minion-mobile@2x.jpg"); } }
 
 @media (max-width: 767px) {
-    .cruises__item:hover .cruises__card {
-      opacity: 1; }
-    .cruises__item:hover .cruises__item-title {
-      opacity: 0; }
   .cruises__card-title {
     margin-bottom: 17px; }
   .cruises__item-title {

@@ -98,7 +98,8 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &:active {
     .cruises__card {
       opacity: 1;
     }
@@ -192,6 +193,10 @@
   margin-top: -3px;
 }
 
+.cruises__card--touch {
+  opacity: 1;
+}
+
 
 @media (max-width: $tablet-max-width) {
   .cruises {
@@ -275,15 +280,6 @@
       }
     }
 
-    &:hover {
-      .cruises__card {
-        opacity: 1;
-      }
-
-      .cruises__item-title {
-        opacity: 0;
-      }
-    }
   }
 
   .cruises__card-title {
@@ -401,15 +397,6 @@
       }
     }
 
-    &:hover {
-      .cruises__card {
-        opacity: 1;
-      }
-
-      .cruises__item-title {
-        opacity: 0;
-      }
-    }
   }
 
   .cruises__card-title {
