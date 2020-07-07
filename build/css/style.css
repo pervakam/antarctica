@@ -1131,10 +1131,12 @@ body {
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
       .cruises__item--minion {
         background-image: url("../img/cruises/minion-desktop@2x.jpg"); } }
-  .cruises__item:hover .cruises__card, .cruises__item:active .cruises__card {
-    opacity: 1; }
-  .cruises__item:hover .cruises__item-title, .cruises__item:active .cruises__item-title {
-    opacity: 0; }
+
+.cruises__item-hover:hover .cruises__card {
+  opacity: 1; }
+
+.cruises__item-hover:hover .cruises__item-title {
+  opacity: 0; }
 
 .cruises__item-title,
 .cruises__card-title {
@@ -1150,6 +1152,8 @@ body {
   position: relative;
   top: 340px;
   left: 30px; }
+  .cruises__item-title--close {
+    opacity: 0; }
 
 .cruises__card {
   background-color: #011c40;
@@ -1170,6 +1174,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .cruises__card--open {
+    opacity: 1; }
 
 .cruises__card-item,
 .cruises__card-description {
@@ -1209,9 +1215,6 @@ body {
 .cruises__card-info {
   margin-left: -2px;
   margin-top: -3px; }
-
-.cruises__card--touch {
-  opacity: 1; }
 
 @media (max-width: 1023px) {
   .cruises {
@@ -1561,7 +1564,10 @@ body {
     .booking__form input[type="checkbox"]::before {
       margin-left: -23px;
       margin-top: -5px;
-      margin-right: 6px; } }
+      margin-right: 6px; }
+  .booking__form button {
+    border-radius: 0;
+    background-color: #f9fbfd; } }
 
 @media (max-width: 767px) {
   .booking {

@@ -200,6 +200,11 @@
       margin-right: 6px;
     }
   }
+
+  .booking__form button {
+    border-radius: 0;
+    background-color: $main;
+  }
 }
 
 @media (max-width: $mobile-max-width) {
